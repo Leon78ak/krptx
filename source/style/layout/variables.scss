@@ -1,0 +1,36 @@
+$tablet-width:             768px;
+$desktop-width:            1200px;
+$mobile-width-only:        768px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+// Базовые цвета https://colorscheme.ru/color-converter.html
+
+$white:                    #ffffff;
+$black:                    #000000;
+$green:                    #007558;
+
+$body-bg:                  $white;
+$bg-main-color:            $green;
+
+$font-color--main:         #00644b;
+$font-color--alt:          $white;
+
+// Базовая типографика
+//
+$main-font:                "PTSans", Arial, sans-serif;
+$bold-font:                "PTSansBold", Arial, sans-serif;
+$italic-font:              "PTSansItalic", Arial, sans-serif;
+$title-font:               "Kurale", Arial, sans-serif;
+
+$font-size:                14px;
+$font-size--h1:            30px;
+$font-size--h2:            25px;
+$font-size--h3:            20px;
+
+$line-height:              1.2;
+
+$light:                    400;
+$bold:                     700;
+
+$text-color:               $black;

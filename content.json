@@ -1,0 +1,33 @@
+{
+  "navPages": [
+    {
+      "name": "",
+      "address": "#"
+    },
+    {
+      "name": "",
+      "address": "#"
+    },
+    {
+      "name": "",
+      "address": "#"
+    }
+  ],
+  "socials": [
+    {
+      "name": "fb",
+      "link": "https://",
+      "title": ""
+    },
+    {
+      "name": "twitter",
+      "link": "https://",
+      "title": ""
+    },
+    {
+      "name": "vk",
+      "link": "https://vk.com/",
+      "title": ""
+    }
+  ]
+}

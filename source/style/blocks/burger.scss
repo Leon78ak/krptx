@@ -1,0 +1,71 @@
+.burger {
+  position: relative;
+  z-index: 1;
+
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+
+  // центруем спан по вертикали
+  line-height: 4px;
+  background: transparent;
+  border: 2px solid $white;
+  border-radius: 50%;
+  user-select: none;
+  cursor: pointer;
+
+  > span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 4px;
+    font-size: 0;
+    color: transparent;
+    background: $white;
+    transition: background 0.3s 0.5s;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 25px;
+      height: 4px;
+      background: $white;
+      transform-origin: 50% 50%;
+      transition: top 0.3s,transform 0.3s 0.5s;
+    }
+
+    &:before {
+      top: -8px;
+    }
+
+    &:after {
+      top: 8px;
+    }
+  }
+
+  &--close {
+
+    > span {
+      transition: background 0.3s 0;
+      background: transparent;
+
+      &:before,
+      &:after {
+        transition: top 0.3s,transform 0.3s 0.5s;
+        top: 0;
+      }
+
+      &:before {
+        transform: rotate3d(0, 0, 1, 45deg);
+      }
+
+      &:after {
+        transform: rotate3d(0, 0, 1, -45deg);
+      }
+    }
+  }
+}

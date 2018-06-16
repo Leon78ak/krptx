@@ -1,0 +1,23 @@
+header.page-header
+  .container(class='page-header__container')
+    .page-header__nav
+      +nav("closed, no-js")
+      button.burger(class='page-header__burger' type='button')
+        span Открыть меню
+      span.page-header__nav-title
+        | Меню
+    h1.page-header__title
+      | Группа компаний Emerald
+      span Организация свадебных торжеств
+    a.page-header__logo
+      img(src='../img/logo.png' srcset='../img/logo@2.png 2x' width='' height='')
+    .page-header__contacts
+      +icon("phone")
+      a.phones(+7 (495) 195-57-22)
+        | +7 (495) 195-57-22
+      a.phones(+7 (985) 394-10-57)
+        | +7 (985) 394-10-57
+    a.btn(class=' page-header__call-btn' href='')
+      | Заказать звонок
+
+
