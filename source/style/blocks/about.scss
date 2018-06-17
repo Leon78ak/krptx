@@ -1,0 +1,46 @@
+.about {
+  padding-top: 64px;
+  color: $font-color--main;
+  background-color: $body-bg;
+}
+
+.about__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about__text,
+.about__video {
+  width: 49%;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+
+  padding-left: 28px;
+
+  p {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.about__title {
+  @include g-section-title();
+  margin-bottom: 15px;
+
+  text-align: center;
+}
+
+.about__text-instagram {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.about__video {
+  padding-top: 18px;
+}

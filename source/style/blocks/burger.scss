@@ -26,9 +26,9 @@
     background: $white;
     transition: background 0.3s 0.5s;
 
-    &:before,
-    &:after {
-      content: '';
+    &::before,
+    &::after {
+      content: "";
       position: absolute;
       left: 0;
       width: 25px;
@@ -37,11 +37,11 @@
       transition: top 0.3s 0.3s,transform 0.3s;
     }
 
-    &:before {
+    &::before {
       top: -8px;
     }
 
-    &:after {
+    &::after {
       top: 8px;
     }
   }
@@ -52,17 +52,17 @@
       transition: background 0.3s 0;
       background: transparent;
 
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         transition: top 0.3s,transform 0.3s 0.5s;
         top: 0;
       }
 
-      &:before {
+      &::before {
         transform: rotate3d(0, 0, 1, 45deg);
       }
 
-      &:after {
+      &::after {
         transform: rotate3d(0, 0, 1, -45deg);
       }
     }

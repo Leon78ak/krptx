@@ -1,0 +1,29 @@
+.instagram {
+  position: relative;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  padding-left: 45px;
+
+  font-family: $bold-font;
+  font-weight: $bold;
+  font-size: 24px;
+  color: $font-color--main;
+
+  &::before {
+    content: "";
+
+    @include centered(y);
+    position: absolute;
+    left: 0;
+
+    width: 35px;
+    height: 35px;
+    padding-left: 45px;
+
+    background-image: url("../img/instagram-color.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}

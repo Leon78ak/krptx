@@ -26,9 +26,9 @@
 
 @font-face {
   font-weight: 400;
-  font-family: "Kurale", Arial, sans-serif;
+  font-family: "Kurale", serif;
   font-style: normal;
 
-  src: url("kuraleregular/ptsansbold.woff2") format(woff2),
-    url("kuraleregular/ptsansbold.woff") format(woff);
+  src: url("fonts/Kurale.otf") format(woff2),
+    url("fonts/Kurale.woff") format(woff);
 }
