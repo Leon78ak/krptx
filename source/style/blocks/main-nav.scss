@@ -1,7 +1,38 @@
 .main-nav {
-  display: none;
+  position: absolute;
+  top: 80px;
+  z-index: 100;
+
+  transition: opacity 0.7s;
 }
 
 .main-nav__list {
   @include ul-unstyled();
+}
+
+.main-nav__link {
+  display: block;
+  padding: 15px;
+  padding-left: 20px;
+
+  color: $font-color--main;
+  background-color: $body-bg;
+  border-bottom: 1px solid $green;
+
+  &:hover,
+  &:focus {
+    color: $font-color--alt;
+    background-color: $bg-main-color;
+  }
+}
+
+
+.main-nav--closed {
+  opacity: 0.1;
+
+  transform: translateX(-2000px);
+}
+
+.main-nav--opened {
+  transform: translateX(0);
 }

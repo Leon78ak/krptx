@@ -16,8 +16,6 @@ mixin nav(mods)
     }
 
   nav.main-nav(class=` ${allMods}`)&attributes(attributes)
-    button.main-nav__toggle(type="button")
-      span.visually-hidden Открыть меню
     .main-nav__container
       ul.main-nav__list
         each item in navPages

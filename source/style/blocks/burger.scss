@@ -34,8 +34,7 @@
       width: 25px;
       height: 4px;
       background: $white;
-      transform-origin: 50% 50%;
-      transition: top 0.3s,transform 0.3s 0.5s;
+      transition: top 0.3s 0.3s,transform 0.3s;
     }
 
     &:before {
