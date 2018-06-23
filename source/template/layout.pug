@@ -4,12 +4,14 @@ doctype html
 html(lang='ru')
   head
     meta(charset="utf-8")
-    title start-project
+    title
+      block title
     meta(content="" name="author")
     meta(content="" name="description")
     meta(content="" name="keywords")
     meta(content="width=device-width, initial-scale=1" name="viewport")
     meta(content="ie=edge" http-equiv="x-ua-compatible")
+
 
     //- favicon block start
     //- favicon block end
@@ -18,12 +20,7 @@ html(lang='ru')
   body
 
     include ./blocks/header
-
-    include ./blocks/top-banner
-
-    include ./blocks/about
-
-    main.page-main
+    block content
 
     include ./blocks/footer
 

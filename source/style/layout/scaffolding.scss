@@ -72,3 +72,19 @@ input[type="radio"].visually-hidden {
   padding-right: 15px;
   padding-left: 15px;
 }
+
+
+
+.g-section-title {
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-family: $title-font;
+  font-size: 42px;
+  color: $font-color--main;
+  text-align: center;
+
+  &--white {
+    color: $font-color--alt;
+  }
+}
