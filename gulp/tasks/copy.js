@@ -2,10 +2,8 @@
 
 module.exports = function () {
   $.gulp.task('copy', function() {
-    return $.gulp.src([
-    'source/fonts/**/*.{woff,woff2}',
-    'source/img/*.{png,jpg,svg}'
-    ], {
+    return $.gulp.src(
+    'source/fonts/**/*.{woff,woff2}', {
       base: 'source'
     })
     .pipe($.gulp.dest('build'));

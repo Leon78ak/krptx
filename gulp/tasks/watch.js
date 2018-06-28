@@ -10,5 +10,7 @@ module.exports = function () {
   $.gulp.series('svg'));
     $.gulp.watch('./source/js/*.js',
       $.gulp.series('script'));
+    $.gulp.watch("./source/img/**/*.*",
+  $.gulp.series("copy:image"));
   });
 };

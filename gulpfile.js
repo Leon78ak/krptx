@@ -18,6 +18,7 @@ $.path.task.forEach(function(taskPath) {
 $.gulp.task('dev', $.gulp.series(
   'clean',
   'copy',
+  'copy:image',
   'svg',
   $.gulp.parallel(
     'styles:dev',

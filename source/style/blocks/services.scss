@@ -3,8 +3,9 @@
 
   padding-top: 68px;
 
-  color: #000;
+  color: $font-color--alt;
   background: $green url("../img/services-bg.jpg") 0 0 no-repeat;
+  background-size: cover;
 
   &::after {
     content: "";
@@ -20,4 +21,108 @@
     background-position: 0 0;
     background-repeat: repeat-x;
   }
+}
+
+.services__title {
+  margin: 30px;
+}
+
+.services__list {
+  @include ul-unstyled();
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services__item {
+  position: relative;
+
+  width: 40%;
+  min-height: 165px;
+  margin-right: 1.3%;
+  margin-left: 1.3%;
+  margin-bottom: 40px;
+  padding-left: 180px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 165px;
+    height: 165px;
+
+    border-radius: 50%;
+  }
+
+  &--center {
+    width: calc(100%/3 - 2.6%);
+  }
+}
+
+.services__item--organization {
+
+  &::before {
+    background: url("../img/organization.jpg") 0 0 no-repeat;
+  }
+}
+
+.services__item--mc {
+  padding-right: 8%;
+
+  &::before {
+    background: url("../img/mc.jpg") 0 0 no-repeat;
+  }
+}
+
+.services__item--photographer {
+
+  &::before {
+    background: url("../img/photographer.jpg") 0 0 no-repeat;
+  }
+}
+
+.services__item--decoration {
+
+  &::before {
+    background: url("../img/decoration.jpg") 0 0 no-repeat;
+  }
+}
+
+.services__item--banquet {
+
+  &::before {
+    background: url("../img/banquet.jpg") 0 0 no-repeat;
+  }
+}
+
+.services__item--registration {
+
+  &::before {
+    background: url("../img/registration.jpg") 0 0 no-repeat;
+  }
+}
+
+.services__item--artists {
+
+  &::before {
+    background: url("../img/artists.jpg") 0 0 no-repeat;
+  }
+}
+
+.services__item-title {
+  display: block;
+  margin-bottom: 10px;
+
+  font-family: $bold-font;
+  font-size: 24px;
+}
+
+.services__item-text {
+  margin: 0;
+
+  font-family: $main-font;
+  font-size: 17px;
 }
